@@ -1,0 +1,77 @@
+.navBar {
+    background-color: white;
+    color: black;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* color: white; */
+    z-index: 9;
+}
+
+.left-corner {
+    background-color: rgb(232, 59, 70);
+    height: 80px;
+    width: 90px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 12;
+}
+
+.inn-circle {
+    background-color: rgb(234, 120, 128);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    text-align: center;
+    z-index: 14; 
+}
+
+.heading-txt {
+    margin-left: 120px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.icon-add {
+    margin: -5px !important;
+    margin-left: 2px !important;
+}
+
+.filter-search {
+    position: absolute;
+    right: 20px;
+}
+
+.search-input {
+    height: 35px;
+    margin-right: 10px;
+    background-color: #dddddd;
+}
+
+.filter-btn {
+    height: 35px;
+    border-radius: 5px !important;
+    text-transform: none !important;
+    pointer-events: none;
+    background-color: #cccccc!important;
+    color: black !important;
+    opacity: 0.8;
+    box-shadow: none !important;
+}
+
+/* .Mui-focused {
+    text-decoration: none !important;
+    border: 3px solid #000000;
+} */
+
+.content {
+    margin-left: 90px;
+    margin-top: 100px;
+}

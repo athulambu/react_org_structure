@@ -7,74 +7,10 @@ import EmpData from './empData';
 
 const Organisation = () => {
 
-  const [selected, setSelected] = React.useState("tree")
-
-  const orgChart = {
-    name: 'CEO',
-    children: [
-      {
-        name: 'Manager',
-        attributes: {
-          department: 'Production',
-        },
-        children: [
-          {
-            name: 'Foreman',
-            attributes: {
-              department: 'Fabrication',
-            },
-            children: [
-              {
-                name: 'Worker',
-              },
-            ],
-          },
-          {
-            name: 'Foreman',
-            attributes: {
-              department: 'Assembly',
-            },
-            children: [
-              {
-                name: 'Worker',
-                children: [
-                  {
-                    name: 'Foreman',
-                    attributes: {
-                      department: 'Fabrication',
-                    },
-                    children: [
-                      {
-                        name: 'Worker',
-                      },
-                    ],
-                  },
-                  {
-                    name: 'Foreman',
-                    attributes: {
-                      department: 'Assembly',
-                    },
-                    children: [
-                      {
-                        name: 'Worker',
-
-                      },
-                    ],
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  };
+  const [selected, setSelected] = React.useState("tree");
 
 
   return (
-    // <div id="treeWrapper" style={{ width: '100em', height: '100em' }}>
-    //   <Tree data={orgChart} />
-    // </div>
     <div>
       <div className="tab-group">
         <div className="tabs-slt" onClick={() => setSelected("list")}>

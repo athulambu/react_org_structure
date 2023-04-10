@@ -1,0 +1,43 @@
+.action-container {
+    width: 20em;
+    height: 6em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.action-trigger {
+    display: flex !important;
+}
+
+.btn-yes {
+    margin: 0.6em;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    background-color: rgb(232, 59, 70);
+    color: white;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    height: 2em;
+    width: 4em;
+    cursor: pointer;
+}
+
+.btn-no {
+    margin: 0.6em;
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    height: 2em;
+    width: 4em;
+    cursor: pointer;
+}

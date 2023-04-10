@@ -4,6 +4,7 @@ import GridViewIcon from '@mui/icons-material/GridView';
 import LanIcon from '@mui/icons-material/Lan';
 import "./organisation.css"
 import EmpData from './empData';
+import Header from './Header/Header';
 
 const Organisation = () => {
 
@@ -12,6 +13,9 @@ const Organisation = () => {
 
   return (
     <div>
+      <div>
+        <Header />
+      </div>
       <div className="tab-group">
         <div className="tabs-slt" onClick={() => setSelected("list")}>
           <ListSharpIcon style={{

@@ -1,18 +1,16 @@
 import { Button, OutlinedInput } from '@mui/material';
 import React from 'react'
-import Sidebar from '../Sidebar/Sidebar';
+import Sidebar from '../../layout/Sidebar/Sidebar';
 import "./header.css";
 import FilterListIcon from '@mui/icons-material/FilterList';
-import Organisation from '../../Org-Structure/organisation';
+import Organisation from '../organisation';
 import InputAdornment from '@mui/material/InputAdornment';
 import AddBoxSharpIcon from '@mui/icons-material/AddBoxSharp';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 
 function Header() {
   return (
     <nav>
-      <div className="left-corner">
-        <div className="inn-circle"></div>
-      </div>
       <div className="navBar">
         <div className="heading-txt">
           People  <AddBoxSharpIcon className="icon-add"/>
@@ -28,7 +26,7 @@ function Header() {
             placeholder="Search"
             className="search-input"
             startAdornment={<InputAdornment position="start">
-            <FilterListIcon />
+            <SearchOutlinedIcon />
             </InputAdornment>}
           />
           <Button variant="contained" startIcon={<FilterListIcon />}

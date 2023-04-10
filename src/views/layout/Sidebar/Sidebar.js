@@ -14,14 +14,27 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import CorporateFareIcon from '@mui/icons-material/CorporateFare';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import Action from '../Action/Action';
 
 
 const Sidebar = (props) => {
   const {setActiveSideTab, activeSideTab} = props
-  // const [active, setActive] = React.useState("org-chart")
+  const [userAction, setUserAction] = React.useState(false);
+  // const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setUserAction(true);
+  };
+
+  const handleClose = () => {
+    setUserAction(false);
+  };
 
   return (
     <div>
+      <div className="left-corner">
+        <div className="inn-circle"></div>
+      </div>
       <nav className="sidebar-container">
         <ul className="sidebar-icons">
           <li className={activeSideTab === "home" ? "active" : "inactive"}>
@@ -62,9 +75,14 @@ const Sidebar = (props) => {
             <NotificationsNoneIcon />
           </li>
           <li>
-            <AccountCircleIcon />
+            <AccountCircleIcon onClick={()=>setUserAction(true)}/>
           </li>
         </ul>
+        <Action
+        setLogin={props?.setLogin}
+        open={userAction}
+        onClose={handleClose}
+      />
       </nav>
     </div>
   )

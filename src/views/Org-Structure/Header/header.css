@@ -11,27 +11,7 @@
     z-index: 9;
 }
 
-.left-corner {
-    background-color: rgb(232, 59, 70);
-    height: 80px;
-    width: 90px;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: 12;
-}
 
-.inn-circle {
-    background-color: rgb(234, 120, 128);
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    position: fixed;
-    top: 15px;
-    left: 20px;
-    text-align: center;
-    z-index: 14; 
-}
 
 .heading-txt {
     margin-left: 120px;
